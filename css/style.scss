@@ -1,0 +1,1300 @@
+$b:black;
+$r:red;
+$w:20%;
+$h:100px;
+$t:10px;
+$wh:white;
+$mini-grey:#9E9E9E;
+$br:1px solid;
+$light-grey:#DDDDDD;
+$bac-kanach:#009688;
+$aq:aqua;
+$dark-grey:#616161;
+$very-light-grey:#F1F1F1;
+$very-dark-grey:#666666;
+$tangerine:#F44336;
+$mug:#4D636F;
+
+
+
+*{
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+
+// NAV START
+
+nav{
+  width: $w*5;
+  background-color: $b;
+  //padding: $t;
+  display: flex;
+  justify-content: space-between;
+
+
+  &
+
+  div{
+    &
+    i{
+  padding: $t;
+    }
+  }
+  &
+
+  i{
+    color:$wh;
+    padding: $t;
+  }
+
+  &
+
+  i:hover{
+    background-color: $light-grey;
+    color:$b;
+  }
+}
+
+@media only screen and (max-width:500px){
+  nav{
+    display: none;
+  }
+
+}
+
+//NAV END
+
+
+//HEADER START
+
+header{
+ width: $w*5;
+ height: $h*2;
+ background-color: $wh;
+ display: flex;
+ justify-content: center;
+ align-items: center;
+ flex-direction: column;
+ font-size: $t*2;
+
+
+}
+
+//HEADER END
+
+
+
+//MAIN_IMAGE START
+
+.main_image{
+ width: $w*5;
+ height: $h*10;
+ background-image: url(../image/jane.jpg);
+ background-repeat: no-repeat;
+ background-position: center;
+ display: flex;
+ justify-content: center;
+//  align-items: center;
+ flex-direction: column;
+ padding-left: $t;
+ 
+
+
+ &
+
+ div{
+  position: absolute;
+
+  &
+
+ h1,h2{
+  color: $wh;
+  font-size: $t*4;
+ }
+
+ &
+
+ button{
+   padding: $t+5 $t*2.5 $t+5 $t*2.5;
+   font-size: $t*1.7;
+   width: $h + 50;
+ }
+
+}
+
+
+
+
+}
+
+// MAIN_IMAGE END
+
+
+// REGISTRATION START
+
+
+.subs{
+  display: flex;
+  justify-content: center;
+  width: $w*5;
+  height: $w*5;
+   position: fixed;
+   display: none;
+  // position: absolute;
+  top:0;
+  
+  &
+
+ .subscribe{
+  position:relative;
+  width: 800px;
+  //height: $h*3;
+  border:1px solid $wh;
+  margin: auto;
+  background-color: $wh;
+  top: $h;
+  padding: $t;
+  text-align: center;
+  // position: fixed;
+  // left:50px;
+  
+
+  &
+
+  h1{
+    color:$b;
+
+    &
+
+    span{
+
+      &
+
+      i{
+        
+        padding: 0px $t 0px $t;
+      }
+
+      &
+
+      i:hover{
+        background-color: $mini-grey;
+        cursor: pointer;
+      }
+      
+    }
+  }
+}
+
+  &
+
+  input{
+    width: $w*5;
+    padding: $t;
+
+  }
+
+  &
+
+  button{
+    width: $w*5;
+    color:$wh;
+    background-color: $tangerine;
+    border:none;
+    padding: $t;
+  }
+
+  &
+
+  button:hover{
+    background-color: $light-grey;
+    color:$b;
+    cursor: pointer;
+  }
+
+  
+ }
+
+ @media only screen and (max-width:818px){
+  .subs{
+    &
+  .subscribe{
+    width: 600px;
+  }
+}
+}
+
+
+@media only screen and (max-width:620px){
+  .subs{
+    &
+  .subscribe{
+    width: 400px;
+  }
+}
+}
+
+
+@media only screen and (max-width:420px){
+
+  .subs{
+
+  .subscribe{
+    width: 300px;
+  }
+}
+}
+
+
+// REGISTRATION END
+
+
+
+
+
+// MAIN START
+
+main{
+ width: $w*5;
+ //height: $h*40;
+ background-color: #F1F1F1;
+ display: flex;
+ justify-content: center;
+ padding-top: $t*2;
+ padding-bottom: $t * 2;
+ &
+
+
+ .main_in{
+ width: $w*4.8;
+// height: $h * 35;
+ //border:$br;
+ display: flex;
+ justify-content: space-between;
+ flex-wrap: wrap;
+
+
+// left block start
+
+ &
+
+
+
+ .left_block{
+  width: $w*3.3;
+  //height: $h * 29;
+  //border:$br;
+  
+
+  // title heading start
+
+  &
+
+  .title_heading{
+    background-color: $wh;
+    width: $w*5;
+   // height: $h*13;
+    padding: $t*2; 
+
+  &
+
+  .tit_head{
+      text-align: center;
+
+    &
+
+    h3{
+
+      &
+
+      span{
+        color:$mini-grey
+      }
+    }
+    
+  }
+
+
+  &
+
+  img{
+    width: $w*5;
+    margin-top: $t*2;
+  }
+
+  &
+
+  p{
+    margin-top: $t*2;
+  }
+
+  &
+
+  .like{
+    margin-top: $t*2;
+    //width: $w*5;
+    display: flex;
+    justify-content: space-between;
+
+    &
+
+    button{
+      font-size: $t*1.5;
+    }
+   
+    &
+    button:nth-child(1){
+    padding: $t $t*2 $t $t*2;  
+    background-color: $wh;  
+    border-color: $light-grey; 
+ 
+    }
+
+
+    &
+
+    button:nth-child(1):hover{
+      background-color: $light-grey;
+      cursor: pointer;
+    }
+
+
+    &
+
+    button:nth-child(2){
+      background-color: $b;
+      color:$wh;
+      padding: $t $t*2 $t $t*2;   
+
+      
+
+      &
+
+
+
+      span{
+        background-color: $wh;
+        color:$b;
+        padding: 5px;
+        
+      }
+    }
+
+
+    &
+
+    
+    button:nth-child(2):hover{
+      background-color: $light-grey;
+      color:$b;
+      border:none;
+      cursor: pointer;
+
+    }
+
+  }
+
+  &
+  
+  
+  
+  #follower{
+   // height: $h*2;
+    width: $w*5;
+    margin-top: $t*2;
+    //border:$br;
+    display: flex;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: $light-grey;
+    display: none;
+
+    &
+
+    .img{
+      width: $h*2;
+     // border: $br;
+
+    img{
+      width: $w*3.5;
+      
+    }
+
+  }
+
+
+  &
+
+
+  .img_text{
+    margin-top: $t*2;
+    width: $w*5;
+
+    &
+
+    h3{
+
+      &
+
+      span{
+        color:$dark-grey;
+      }
+    }
+  }
+  }
+
+  &
+
+
+
+
+
+
+  #follower2{
+    // height: $h*2;
+     width: $w*5;
+     margin-top: $t*2;
+   //  border:$br;
+     display: flex;
+     border-bottom: none;
+     border-left: none;
+     border-right: none;
+     border-color: $light-grey;
+    // display: none;
+     
+ 
+     &
+     
+ 
+     .img{
+       width: $h*2;
+      // border: $br;
+       
+ 
+     img{
+       width: $w*3.5;
+       
+     }
+ 
+   }
+ 
+ 
+   &
+ 
+ 
+   .img_text{
+     margin-top: $t*2;
+    // border:$br;
+     width: $w*5;
+ 
+     &
+ 
+     h3{
+ 
+       &
+ 
+       span{
+         color:$dark-grey;
+       }
+     }
+   }
+   }
+
+
+   //followers 3 START
+
+   #followers3{
+    display: none;
+
+
+    &
+
+
+    #follower3_1{
+
+     // height: $h*2;
+     width: $w*5;
+     margin-top: $t*2;
+   //  border:$br;
+     display: flex;
+     border-bottom: none;
+     border-left: none;
+     border-right: none;
+     border-color: $light-grey;
+    // display: none;
+     
+ 
+     &
+     
+ 
+     .img{
+       width: $h*2;
+      // border: $br;
+       
+ 
+     img{
+       width: $w*3.5;
+       
+     }
+ 
+   }
+ 
+ 
+   &
+ 
+ 
+   .img_text{
+     margin-top: $t*2;
+    // border:$br;
+     width: $w*5;
+ 
+     &
+ 
+     h3{
+ 
+       &
+ 
+       span{
+         color:$dark-grey;
+       }
+     }
+   }
+  }
+  
+
+  &
+
+
+  #follower3_2{
+
+    // height: $h*2;
+    width: $w*5;
+    margin-top: $t*2;
+    //border:$br;
+    display: flex;
+    border-bottom: none;
+    border-left: none;
+    border-right: none;
+    border-color: $light-grey;
+   // display: none;
+    
+
+    &
+    
+
+    .img{
+      width: $h*2;
+     // border: $br;
+      
+
+    img{
+      width: $w*3.5;
+      
+    }
+
+  }
+
+
+  &
+
+
+  .img_text{
+    margin-top: $t*2;
+   // border:$br;
+    width: $w*5;
+
+    &
+
+    h3{
+
+      &
+
+      span{
+        color:$dark-grey;
+      }
+    }
+  }
+ }
+
+ &
+
+
+ #follower3_3{
+
+  // height: $h*2;
+  width: $w*5;
+  margin-top: $t*2;
+ // border:$br;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: $light-grey;
+ // display: none;
+  
+
+  &
+  
+
+  .img{
+    width: $h*2;
+   // border: $br;
+    
+
+  img{
+    width: $w*3.5;
+    
+  }
+
+}
+
+
+&
+
+
+.img_text{
+  margin-top: $t*2;
+ // border:$br;
+  width: $w*5;
+
+  &
+
+  h3{
+
+    &
+
+    span{
+      color:$dark-grey;
+    }
+  }
+}
+}
+
+   }
+
+   // FOLLOWERS3 END
+
+  
+
+
+
+  }
+
+// title heading end
+
+
+ }
+
+ // left block end
+
+
+
+
+
+
+
+// right block start
+
+ &
+
+ .right_block{
+  width: $w*1.6;
+ // height: $h * 25;
+ // border:5px solid red;
+
+
+
+  &
+
+  // My Name START
+
+  .name{
+    width: $w*5;
+   // height: $h*5;
+   // border:$br;
+
+    &
+
+    img{
+      width: $w*5;
+    }
+
+    &
+
+    .name_text{
+      background-color: $b;
+      color:$wh;
+      padding: $t;
+    }
+  }
+
+  // MY Name END
+
+
+  &
+
+  // POSTS START
+
+  .posts{
+    width: $w*5;
+    //height: $h*7;
+   // border:$br;
+    margin-top: $t*3;
+
+    &
+
+    .pop_post{
+      width: $w*5;
+     // height: $h/2;
+     // border:$br;
+      color:$wh;
+      background-color: $b;
+      padding:$t*2 $t $t*2 $t;
+    }
+
+    &
+
+    .img_1{
+      width: $w*5;
+      height: $h;
+      //border:$br;
+      display: flex;
+      padding: $t;
+      border-bottom: 1px solid $light-grey;
+      background-color: $wh;
+
+      &
+
+      img{
+        width: $w - 5;
+      }
+
+      &
+
+      p{
+        margin-left: $t;
+        font-size: $t*2;
+
+        &
+        span{
+          font-size: $t + 5;
+        }
+      }
+    }
+
+    .img_1:hover{
+      background-color: $light-grey;
+    }
+
+
+    &
+
+    .img_2{
+      width: $w*5;
+      height: $h;
+     // border:$br;
+      display: flex;
+      padding: $t;
+      border-bottom: 1px solid $light-grey;
+      background-color: $wh;
+
+      &
+
+      img{
+        width: $w - 5;
+      }
+
+      &
+
+      p{
+        margin-left: $t;
+        font-size: $t*2;
+
+        &
+        span{
+          font-size: $t + 5;
+        }
+      }
+    }
+
+    &
+
+
+    
+    .img_2:hover{
+      background-color: $light-grey;
+    }
+
+
+    
+    &
+
+    .img_3{
+      width: $w*5;
+      height: $h;
+    //  border:$br;
+      display: flex;
+      padding: $t;
+      border-bottom: 1px solid $light-grey;
+      background-color: $wh;
+
+      &
+
+      img{
+        width: $w - 5;
+      }
+
+      &
+
+      p{
+        margin-left: $t;
+        font-size: $t*2;
+
+        &
+        span{
+          font-size: $t + 5;
+        }
+      }
+    }
+
+    &
+
+
+    
+    .img_3:hover{
+      background-color: $light-grey;
+    }
+
+    &
+
+    
+
+    .img_4{
+      width: $w*5;
+      height: $h;
+     // border:$br;
+      display: flex;
+      padding: $t;
+     // border-bottom: 1px solid $light-grey;
+     background-color: $wh;
+
+      &
+
+      img{
+        width: $w - 5;
+      }
+
+      &
+
+      p{
+        margin-left: $t;
+        font-size: $t*2;
+
+        &
+        span{
+          font-size: $t + 5;
+        }
+      }
+    }
+
+    &
+
+
+    
+    .img_4:hover{
+      background-color: $light-grey;
+    }
+
+
+
+  }
+
+  // POSTS END
+
+
+  // advertise START
+
+  .advertise{
+
+    width: $w*5;
+    color:$wh;
+    margin-top: $t*3;
+
+
+    &
+
+  
+  .advertise_title{
+    width: $w*5;
+   // height: $h/2;
+   // border:$br;
+    color:$wh;
+    background-color: $b;
+    padding:$t*2 $t $t*2 $t;
+  }
+
+  &
+
+  .AD{
+    width: $w* 5;
+    padding: $t;
+    background-color: $wh;
+
+    &
+
+    .AD_in{
+      width: $w*5;
+      height: $h*2;
+      //border:$br;
+      color:$b;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: $t*2;
+      background-color: #F1F1F1;
+    };
+
+
+  }
+ 
+
+
+
+
+ }
+
+ //Advertise END
+
+
+
+ // TAgs START
+ 
+ &
+
+ .tags{
+  
+  width: $w*5;
+  color:$wh;
+  margin-top: $t*3;
+
+  &
+
+  
+  .tags_title{
+    width: $w*5;
+   // height: $h/2;
+  //  border:$br;
+    color:$wh;
+    background-color: $b;
+    padding:$t*2 $t $t*2 $t;
+  }
+   
+  &
+
+  .tags_names{
+    width: $w*5;
+    background-color: $wh;
+  //  border:$br;
+    color:$b;
+
+    &
+
+    .tags_names_in{
+      width: $w*5;
+     // height: $h*3;
+      background-color: $wh;
+      padding: $t;
+
+      &
+
+      span:nth-child(1){
+        background-color: $b;
+        color:$wh;
+        font-size: $t+8;
+        padding: 3px;
+      }
+
+      &
+
+      span{
+        background-color: #F1F1F1;
+        padding: 3px;
+        line-height: $t*4;
+      }
+      
+    }
+
+
+  }
+
+
+}
+
+//TAGS END
+
+
+// Inspiration Start
+
+&
+
+.inspiration{
+  width: $w*5;
+   
+  &
+
+  .inspiration_title{
+
+  width: $w*5;
+ // height: $h/2;
+//  border:$br;
+  color:$wh;
+  background-color: $b;
+  padding:$t*2 $t $t*2 $t;
+  margin-top: $t*3;
+  }
+
+  &
+
+  .photos{
+    width: $w*5;
+   // height: $h*3;
+    //border:$br;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    background-color: $wh;
+
+    &
+
+    img{
+      width: 45%;
+      padding: $t;
+    }
+
+  }
+}
+ 
+
+
+//Inspiration End
+
+
+
+// Follow Me Start
+
+.follow_me{
+  width: $w*5;
+  margin-top: $t*3;
+
+  &
+
+  .follow_me_title{
+
+    
+  width: $w*5;
+  // height: $h/2;
+ //  border:$br;
+   color:$wh;
+   background-color: $b;
+   padding:$t*2 $t $t*2 $t;
+   margin-top: $t*3;
+
+  }
+
+
+  &
+
+
+  .follow_me_subs{
+    width: $w*5;
+    //height: $h;
+    background-color: $wh;
+    padding: $t;
+    font-size: $t*2.5;
+    
+
+    &
+
+    i:hover{
+       color:$mini-grey
+    }
+  };
+
+
+}
+
+
+
+
+// Follow Me End
+
+
+// SUBS right block START
+
+.a{
+  width:$w*5;
+ // text-align: center;
+  //padding: $t;
+
+  &
+
+.subs_right_block{
+  width: $w*5;
+  // text-align: center;
+  // padding: $t;
+  background-color: $wh;
+  margin-top: $t*3;
+  
+
+  &
+
+  .subs_title{
+    
+  width: $w*5;
+  // height: $h/2;
+ //  border:$br;
+   color:$wh;
+   background-color: $b;
+   padding:$t*2 $t $t*2 $t;
+   margin-top: $t*3;
+
+  }
+
+  &
+
+  .form{
+    padding: $t;
+
+    &
+
+  input{
+    width: $w*5;
+    padding: $t - 2;
+  
+
+  };
+
+  &
+
+  button{
+    width: $w*5;
+    padding: $t - 2;
+    background-color: $tangerine;
+    color:$wh;
+    border:none;
+    cursor: pointer;
+  
+  }
+
+  &
+
+  button:hover{
+    background-color: $light-grey;
+    color:$b;
+  }
+
+}
+}
+}
+
+
+
+
+//SUBS right block END
+
+ 
+
+
+
+ }
+
+
+ //right block  end
+
+
+
+ }
+ 
+@media only screen and (max-width:824px){
+ 
+  .main_in{
+    &
+
+    .left_block{
+      width: $w*5;
+    }
+
+    &
+
+    .right_block{
+      margin-top: $t*3;
+      width: $w*5;
+    }
+  }
+
+
+}
+
+}
+
+
+
+
+// MAIN END
+
+
+footer{
+  width: $w*5;
+  height: $h*2;
+  background-color: $dark-grey;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: $t;
+  
+
+
+  &
+
+  .top{
+    background-color: $b;
+    padding: $t;
+    width: 200px;
+    text-align: center;
+    color:$wh;
+    font-size: $t*2;
+    text-decoration: none;
+
+
+
+
+  }
+
+  &
+
+  .top:hover{
+    background-color: $light-grey;
+    color:$b;
+  }
+
+  &
+
+  p{
+    margin-top: $t;
+    color:$wh;
+
+    &
+
+    a{
+      text-decoration: underline;
+      color:$wh
+    }
+  }
+  
+}
+
+

@@ -1,0 +1,589 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+nav {
+  width: 100%;
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+}
+nav div i {
+  padding: 10px;
+}
+nav i {
+  color: white;
+  padding: 10px;
+}
+nav i:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+
+@media only screen and (max-width: 500px) {
+  nav {
+    display: none;
+  }
+}
+header {
+  width: 100%;
+  height: 200px;
+  background-color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  font-size: 20px;
+}
+
+.main_image {
+  width: 100%;
+  height: 1000px;
+  background-image: url(../image/jane.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.main_image div {
+  position: absolute;
+}
+.main_image div h1,
+.main_image div h2 {
+  color: white;
+  font-size: 40px;
+}
+.main_image div button {
+  padding: 15px 25px 15px 25px;
+  font-size: 17px;
+  width: 150px;
+}
+
+.subs {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  display: none;
+  top: 0;
+}
+.subs .subscribe {
+  position: relative;
+  width: 800px;
+  border: 1px solid white;
+  margin: auto;
+  background-color: white;
+  top: 100px;
+  padding: 10px;
+  text-align: center;
+}
+.subs .subscribe h1 {
+  color: black;
+}
+.subs .subscribe h1 span i {
+  padding: 0px 10px 0px 10px;
+}
+.subs .subscribe h1 span i:hover {
+  background-color: #9E9E9E;
+  cursor: pointer;
+}
+.subs input {
+  width: 100%;
+  padding: 10px;
+}
+.subs button {
+  width: 100%;
+  color: white;
+  background-color: #F44336;
+  border: none;
+  padding: 10px;
+}
+.subs button:hover {
+  background-color: #DDDDDD;
+  color: black;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 818px) {
+  .subs .subscribe {
+    width: 600px;
+  }
+}
+@media only screen and (max-width: 620px) {
+  .subs .subscribe {
+    width: 400px;
+  }
+}
+@media only screen and (max-width: 420px) {
+  .subs .subscribe {
+    width: 300px;
+  }
+}
+main {
+  width: 100%;
+  background-color: #F1F1F1;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+main .main_in {
+  width: 96%;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+main .main_in .left_block {
+  width: 66%;
+}
+main .main_in .left_block .title_heading {
+  background-color: white;
+  width: 100%;
+  padding: 20px;
+}
+main .main_in .left_block .title_heading .tit_head {
+  text-align: center;
+}
+main .main_in .left_block .title_heading .tit_head h3 span {
+  color: #9E9E9E;
+}
+main .main_in .left_block .title_heading img {
+  width: 100%;
+  margin-top: 20px;
+}
+main .main_in .left_block .title_heading p {
+  margin-top: 20px;
+}
+main .main_in .left_block .title_heading .like {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+}
+main .main_in .left_block .title_heading .like button {
+  font-size: 15px;
+}
+main .main_in .left_block .title_heading .like button:nth-child(1) {
+  padding: 10px 20px 10px 20px;
+  background-color: white;
+  border-color: #DDDDDD;
+}
+main .main_in .left_block .title_heading .like button:nth-child(1):hover {
+  background-color: #DDDDDD;
+  cursor: pointer;
+}
+main .main_in .left_block .title_heading .like button:nth-child(2) {
+  background-color: black;
+  color: white;
+  padding: 10px 20px 10px 20px;
+}
+main .main_in .left_block .title_heading .like button:nth-child(2) span {
+  background-color: white;
+  color: black;
+  padding: 5px;
+}
+main .main_in .left_block .title_heading .like button:nth-child(2):hover {
+  background-color: #DDDDDD;
+  color: black;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .left_block .title_heading #follower {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: #DDDDDD;
+  display: none;
+}
+main .main_in .left_block .title_heading #follower .img {
+  width: 200px;
+}
+main .main_in .left_block .title_heading #follower .img img {
+  width: 70%;
+}
+main .main_in .left_block .title_heading #follower .img_text {
+  margin-top: 20px;
+  width: 100%;
+}
+main .main_in .left_block .title_heading #follower .img_text h3 span {
+  color: #616161;
+}
+main .main_in .left_block .title_heading #follower2 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: #DDDDDD;
+}
+main .main_in .left_block .title_heading #follower2 .img {
+  width: 200px;
+}
+main .main_in .left_block .title_heading #follower2 .img img {
+  width: 70%;
+}
+main .main_in .left_block .title_heading #follower2 .img_text {
+  margin-top: 20px;
+  width: 100%;
+}
+main .main_in .left_block .title_heading #follower2 .img_text h3 span {
+  color: #616161;
+}
+main .main_in .left_block .title_heading #followers3 {
+  display: none;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_1 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: #DDDDDD;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_1 .img {
+  width: 200px;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_1 .img img {
+  width: 70%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_1 .img_text {
+  margin-top: 20px;
+  width: 100%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_1 .img_text h3 span {
+  color: #616161;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_2 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: #DDDDDD;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_2 .img {
+  width: 200px;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_2 .img img {
+  width: 70%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_2 .img_text {
+  margin-top: 20px;
+  width: 100%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_2 .img_text h3 span {
+  color: #616161;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_3 {
+  width: 100%;
+  margin-top: 20px;
+  display: flex;
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+  border-color: #DDDDDD;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_3 .img {
+  width: 200px;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_3 .img img {
+  width: 70%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_3 .img_text {
+  margin-top: 20px;
+  width: 100%;
+}
+main .main_in .left_block .title_heading #followers3 #follower3_3 .img_text h3 span {
+  color: #616161;
+}
+main .main_in .right_block {
+  width: 32%;
+}
+main .main_in .right_block .name {
+  width: 100%;
+}
+main .main_in .right_block .name img {
+  width: 100%;
+}
+main .main_in .right_block .name .name_text {
+  background-color: black;
+  color: white;
+  padding: 10px;
+}
+main .main_in .right_block .posts {
+  width: 100%;
+  margin-top: 30px;
+}
+main .main_in .right_block .posts .pop_post {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+}
+main .main_in .right_block .posts .img_1 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: white;
+}
+main .main_in .right_block .posts .img_1 img {
+  width: 15%;
+}
+main .main_in .right_block .posts .img_1 p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .main_in .right_block .posts .img_1 p span {
+  font-size: 15px;
+}
+main .main_in .right_block .posts .img_1:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .right_block .posts .img_2 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: white;
+}
+main .main_in .right_block .posts .img_2 img {
+  width: 15%;
+}
+main .main_in .right_block .posts .img_2 p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .main_in .right_block .posts .img_2 p span {
+  font-size: 15px;
+}
+main .main_in .right_block .posts .img_2:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .right_block .posts .img_3 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  border-bottom: 1px solid #DDDDDD;
+  background-color: white;
+}
+main .main_in .right_block .posts .img_3 img {
+  width: 15%;
+}
+main .main_in .right_block .posts .img_3 p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .main_in .right_block .posts .img_3 p span {
+  font-size: 15px;
+}
+main .main_in .right_block .posts .img_3:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .right_block .posts .img_4 {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  padding: 10px;
+  background-color: white;
+}
+main .main_in .right_block .posts .img_4 img {
+  width: 15%;
+}
+main .main_in .right_block .posts .img_4 p {
+  margin-left: 10px;
+  font-size: 20px;
+}
+main .main_in .right_block .posts .img_4 p span {
+  font-size: 15px;
+}
+main .main_in .right_block .posts .img_4:hover {
+  background-color: #DDDDDD;
+}
+main .main_in .right_block .advertise {
+  width: 100%;
+  color: white;
+  margin-top: 30px;
+}
+main .main_in .right_block .advertise .advertise_title {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+}
+main .main_in .right_block .advertise .AD {
+  width: 100%;
+  padding: 10px;
+  background-color: white;
+}
+main .main_in .right_block .advertise .AD .AD_in {
+  width: 100%;
+  height: 200px;
+  color: black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  background-color: #F1F1F1;
+}
+main .main_in .right_block .tags {
+  width: 100%;
+  color: white;
+  margin-top: 30px;
+}
+main .main_in .right_block .tags .tags_title {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+}
+main .main_in .right_block .tags .tags_names {
+  width: 100%;
+  background-color: white;
+  color: black;
+}
+main .main_in .right_block .tags .tags_names .tags_names_in {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+}
+main .main_in .right_block .tags .tags_names .tags_names_in span:nth-child(1) {
+  background-color: black;
+  color: white;
+  font-size: 18px;
+  padding: 3px;
+}
+main .main_in .right_block .tags .tags_names .tags_names_in span {
+  background-color: #F1F1F1;
+  padding: 3px;
+  line-height: 40px;
+}
+main .main_in .right_block .inspiration {
+  width: 100%;
+}
+main .main_in .right_block .inspiration .inspiration_title {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+  margin-top: 30px;
+}
+main .main_in .right_block .inspiration .photos {
+  width: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  background-color: white;
+}
+main .main_in .right_block .inspiration .photos img {
+  width: 45%;
+  padding: 10px;
+}
+main .main_in .right_block .follow_me {
+  width: 100%;
+  margin-top: 30px;
+}
+main .main_in .right_block .follow_me .follow_me_title {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+  margin-top: 30px;
+}
+main .main_in .right_block .follow_me .follow_me_subs {
+  width: 100%;
+  background-color: white;
+  padding: 10px;
+  font-size: 25px;
+}
+main .main_in .right_block .follow_me .follow_me_subs i:hover {
+  color: #9E9E9E;
+}
+main .main_in .right_block .a {
+  width: 100%;
+}
+main .main_in .right_block .a .subs_right_block {
+  width: 100%;
+  background-color: white;
+  margin-top: 30px;
+}
+main .main_in .right_block .a .subs_right_block .subs_title {
+  width: 100%;
+  color: white;
+  background-color: black;
+  padding: 20px 10px 20px 10px;
+  margin-top: 30px;
+}
+main .main_in .right_block .a .subs_right_block .form {
+  padding: 10px;
+}
+main .main_in .right_block .a .subs_right_block .form input {
+  width: 100%;
+  padding: 8px;
+}
+main .main_in .right_block .a .subs_right_block .form button {
+  width: 100%;
+  padding: 8px;
+  background-color: #F44336;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+main .main_in .right_block .a .subs_right_block .form button:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+@media only screen and (max-width: 824px) {
+  main .main_in .left_block {
+    width: 100%;
+  }
+  main .main_in .right_block {
+    margin-top: 30px;
+    width: 100%;
+  }
+}
+
+footer {
+  width: 100%;
+  height: 200px;
+  background-color: #616161;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 10px;
+}
+footer .top {
+  background-color: black;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  color: white;
+  font-size: 20px;
+  text-decoration: none;
+}
+footer .top:hover {
+  background-color: #DDDDDD;
+  color: black;
+}
+footer p {
+  margin-top: 10px;
+  color: white;
+}
+footer p a {
+  text-decoration: underline;
+  color: white;
+}/*# sourceMappingURL=style.css.map */
